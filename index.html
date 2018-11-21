@@ -4,18 +4,24 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/jquery.selectBox.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.selectBox.js"></script>
+    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
 </head>
 <body>
 <div class="top">
-    <a href="#personal-info" class="active">Личная информация</a>
-    <a href="#experience">Опыт</a>
-    <a href="#javascript">JavaScript</a>
-    <a href="#about">О себе</a>
+    <div class="menu">
+        <a href="#personal-info" class="active">Личная информация</a>
+        <a href="#experience">Опыт</a>
+        <a href="#javascript">JavaScript</a>
+        <a href="#about">О себе</a>
+    </div>
+    <div class="icon"><span></span><span></span><span></span></div>
 </div>
 <div class="profile">
     <h1>Анкета</h1>
@@ -66,11 +72,13 @@
     <div class="javascript" id="javascript">
         <h2>Уровень владения JavaScript</h2>
         <div class="progress">
-            <span>Не владею</span>
-            <span>Использую готовые <br />решения</span>
-            <span>Использую готовые решения<br />и умею и переделывать</span>
-            <span>Пишу сложный JS с нуля</span>
+            <span class="span">Не владею</span>
+            <span class="span">Использую готовые <br />решения</span>
+            <span class="span">Использую готовые решения<br />и умею и переделывать</span>
+            <span class="span">Пишу сложный JS с нуля</span>
+            <div id="range"></div>
         </div>
+
 
 
     </div>

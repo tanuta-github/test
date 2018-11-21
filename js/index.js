@@ -7,7 +7,13 @@ $(document).ready(function () {
         $(this).addClass("active");
         $("html, body").animate({scrollTop: $(link).offset().top - 100});
         return false;
-    })
+    });
+
+    $(".top .icon").click(function () {
+        $(".top .menu").fadeToggle(300);
+    });
+
+    $("#range").ionRangeSlider({from: 70});
 });
 $(window).scroll(function () {
     $(".top a").each(function () {
@@ -17,4 +23,4 @@ $(window).scroll(function () {
             $(this).addClass("active");
         }
     });
-})
+});
