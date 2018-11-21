@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/jquery.selectBox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectBox.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="top">
+    <a href="#personal-info" class="active">Личная информация</a>
+    <a href="#experience">Опыт</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#about">О себе</a>
+</div>
+<div class="profile">
+    <h1>Анкета</h1>
+</div>
+<form action="#" method="post">
+    <div class="personal-info" id="personal-info">
+        <h2>Личная информация</h2>
+        <input type="text" class="fio" placeholder="ФИО" value="Овчаренко Татьяна Сергеевна" />
+        <select>
+            <option value="1987" selected>1987</option>
+            <option value="1988">1988</option>
+            <option value="1989">1989</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+        </select>
+        <input type="text" placeholder="Место проживания" value="Макеевка" />
+        <input type="text" placeholder="Скайп" value="tanygolden" />
+        <input type="text" placeholder="E-mail" value="tany-egorenko@yandex.ru" />
+    </div>
+    <div class="experience" id="experience">
+        <h2>Расскажите о своём опыте</h2>
+        <ul>
+            <li>
+                <label><input type="checkbox" checked /> <span>БЭМ/OOCSS</span></label>
+                <label><input type="checkbox" checked /> <span>Stylus/LESS/SASS</span></label>
+                <label><input type="checkbox" /> <span>Работаю с SVG</span></label>
+            </li>
+            <li>
+                <label><input type="checkbox" checked > <span>Верстаю семантично</span></label>
+                <label><input type="checkbox" checked > <span>ES2015/ES2016</span></label>
+                <label><input type="checkbox" checked > <span>Gulp/GRUNT</span></label>
+            </li>
+            <li>
+                <label><input type="checkbox" checked> <span>Webpack</span></label>
+                <label><input type="checkbox" checked > <span>jQuery</span></label>
+                <label><input type="checkbox" checked > <span>Ипользую Git</span></label>
+
+            </li>
+        </ul>
+
+
+    </div>
+    <div class="javascript" id="javascript">
+        <h2>Уровень владения JavaScript</h2>
+        <div class="progress">
+            <span>Не владею</span>
+            <span>Использую готовые <br />решения</span>
+            <span>Использую готовые решения<br />и умею и переделывать</span>
+            <span>Пишу сложный JS с нуля</span>
+        </div>
+
+
+    </div>
+    <div class="about" id="about">
+        <h2>Расскажите о себе</h2>
+        <p>Напишите несколько предложений, чем привлекла наша вакансия
+            и что вы ожидаете от работы у нас.</p>
+        <textarea placeholder="Понравилась, потому что">Интересные проекты</textarea>
+        <button class="btn">Готово</button>
+
+    </div>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('../fonts/Roboto-Thin/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto-Thin/Roboto-Thin.woff') format('woff'), url('../fonts/Roboto-Thin/Roboto-Thin.ttf')  format('truetype'),
+  url('../fonts/Roboto-Thin/Roboto-Thin.svg#Roboto-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+}
+.top {
+    position: fixed;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+	background: #fff;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	padding-top: 30px;
+    z-index: 100;
+	a {
+		text-decoration: none;
+		font-size: 14px;
+        font-weight: 300;
+		margin: 0 35px;
+        color: #8493b8;
+	}
+    .active  {
+      color: #474747;
+    }
+}
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 45px;
+}
+.profile {
+    padding-top: 80px;
+    padding-bottom: 60px;
+	background: url(../images/header.jpg) no-repeat 50% 0;
+    background-size: 100% auto;
+	h1 {
+        font-family: 'Roboto-Thin';
+		font-size: 70px;
+		text-align: center;
+		padding-top: 110px;
+        font-weight: 400;
+	}
+}
+.personal-info {
+   background: url(../images/1.png) no-repeat 50% 0;
+   padding-top: 70px;
+   padding-bottom: 40px;
+   text-align: center;
+   input{
+     width: 515px;
+     display: block;
+     margin: 0 auto 30px;
+     height: 55px;
+     border: 1px solid #e5e5e5;
+     border-radius: 5px;
+     text-align: center;
+     font-size: 24px;
+     line-height: 55px;
+   }
+  input:focus {
+    border-color: #435993;
+  }
+}
+.experience {
+  background: url(../images/2.png) no-repeat 50% 0;
+  padding: 70px 0 110px;
+  text-align: center;
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 45px;
+  }
+  ul {
+    text-align: center;
+    li {
+      width: 255px;
+      display: inline-block;
+      text-align: left;
+      label {
+        display: block;
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer;
+      }
+      input {
+        display: none;
+      }
+      span {
+        position: relative;
+        padding-left: 35px;
+        display: block;
+      }
+      input ~ span:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url(../images/checkbox.png) no-repeat 0 0;
+      }
+      input:checked ~ span:before {
+        background-position: 0 -20px;
+      }
+    }
+    li:nth-child(2) {
+      position: relative;
+      left: 25px;
+    }
+    li:nth-child(3) {
+      position: relative;
+      left: 45px;
+    }
+  }
+}
+.javascript {
+  background: url(../images/3.png) no-repeat 50% 0;
+  padding: 70px 0;
+  text-align: center;
+  .progress {
+    width: 771px;
+    height: 90px;
+    background: url(../images/progress.png) no-repeat 0 100%;
+    margin: 0 auto;
+    span {
+      width: 25%;
+      float: left;
+      font-size: 13px;
+      text-align: left;
+      font-weight: 300;
+    }
+    span:nth-child(1) {
+      position: relative;
+      top: 15px;
+    }
+    span:nth-child(4) {
+      text-align: right;
+      position: relative;
+      top: 15px;
+    }
+  }
+}
+.about {
+  background: url(../images/4.png) no-repeat 50% 0;
+  padding: 70px 0 0;
+  text-align: center;
+  h2 {
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto 45px;
+  }
+  textarea {
+    display: block;
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 24px;
+    margin: 0 auto 75px;
+    line-height: 1;
+  }
+  button {
+    width: 120px;
+    height: 50px;
+    background: #435993;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+}
+@media (max-width: 1200px) {
+  .profile{
+    background-size: auto auto;
+  }
+}
+@media (max-width: 800px) {
+  .top a {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .personal-info input {
+    width: 290px;
+    font-size: 18px;
+  }
+  .selectBox-dropdown {
+    min-width: 220px;
+  }
+  .selectBox-dropdown .selectBox-label {
+    font-size: 18px;
+  }
+  .experience ul li {
+    display: block;
+    left: 0 !important;
+    margin: 0 auto;
+  }
+  .javascript .progress {
+    width: 290px;
+    background-size: 100% auto;
+  }
+  .javascript .progress span {
+    font-size: 11px;
+  }
+  .about textarea {
+    width: 270px;
+  }
+}
